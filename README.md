@@ -1,6 +1,6 @@
 # almity
+```mermaid
 flowchart TD
-
     subgraph GOV["🏛️ 台北市政府內網（Intranet）"]
         KIOSK["🖥️ KIOSK 裝置（你方）<br/>• WebView2<br/>• NFC Reader<br/>• 固定對外連線"]
     end
@@ -12,3 +12,4 @@ flowchart TD
     end
 
     KIOSK -->|"HTTPS (443)<br/>Outbound 流量"| FIREWALL -->|"允許 443<br/>至 API Server"| APISERVER
+```
